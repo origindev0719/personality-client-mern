@@ -22,7 +22,7 @@ const PersonalityResult = () => {
     fetchData().catch(console.error);
   }, []);
   return (
-    <div className="bg-[#4298b4] min-h-screen">
+    <div className="bg-[#4298b4] min-h-screen overflow-hidden">
       <div className="px-5 flex justify-between border-red-200 fixed w-full bg-white">
         <div className="py-3">
           <img
@@ -52,16 +52,16 @@ const PersonalityResult = () => {
           </button>
         </div>
       </div>
-      <div className="justify-center pt-24 text-center grid m-auto w-full">
+      <div className="justify-center pt-12 text-center grid m-auto w-full overflow-hidden max-h-screen">
         <div className="w-full absolute left-0 top-16">
           {Object.keys(data).length > 0 && (
             <>
               <img
                 src={personalityImage[data.type]}
                 alt="img"
-                className="pb-8"
+                className="pb-3 h-3/6"
               />
-              <p className=" font-bold font-serif text-7xl text-white">
+              <p className=" font-bold font-serif text-6xl text-white">
                 {data["personality"]}
               </p>
               <p className="py-3 font-medium text-gray-300 text-4xl">

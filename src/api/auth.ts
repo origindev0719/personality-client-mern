@@ -1,6 +1,6 @@
 import axios from "axios";
 
-const api = "http://localhost:5000/api";
+const api = `https://personality-backend-1.onrender.com/api`;
 
 const Login = async (user: any): Promise<any> => {
   const response = await axios.post(`${api}/login`, user);

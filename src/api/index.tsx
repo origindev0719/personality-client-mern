@@ -1,6 +1,5 @@
 import axios from "axios";
-
-const api = "http://localhost:5000/api";
+const api = `https://personality-backend-1.onrender.com/api`;
 
 const fetchQuestions = async (): Promise<any> => {
   const response = await fetch(`${api}/question`, {

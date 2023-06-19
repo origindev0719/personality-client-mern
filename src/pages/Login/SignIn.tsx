@@ -38,6 +38,7 @@ const SignIn: React.FC = () => {
     },
     validate,
     onSubmit: async (values) => {
+      console.log(process.env.API_URL);
       const result: any = await Login(values);
       if (result !== "error") {
         navigate("/test");
