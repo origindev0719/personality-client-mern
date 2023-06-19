@@ -3,6 +3,7 @@ import { Link, useNavigate } from "react-router-dom";
 import { useFormik } from "formik";
 import FormInput from "../../components/FormControl/FormInput";
 import FormButton from "../../components/FormControl/FormButton";
+import { Login } from "../../api/auth";
 
 interface FormValue {
   email: string;
@@ -16,7 +17,7 @@ const SignIn: React.FC = () => {
     const errors: Partial<FormValue> = {};
     if (!values.password) {
       errors.password = "Password is Required";
-    } else if (values.password.length < 7) {
+    } else if (values.password.length < 6) {
       errors.password = "Must be greater than 6 characters";
     }
 
@@ -36,9 +37,11 @@ const SignIn: React.FC = () => {
       password: "",
     },
     validate,
-    onSubmit: (values) => {
-      console.log(JSON.stringify(values, null, 2));
-      navigate("/test");
+    onSubmit: async (values) => {
+      const result: any = await Login(values);
+      if (result !== "error") {
+        navigate("/test");
+      }
     },
   });
 

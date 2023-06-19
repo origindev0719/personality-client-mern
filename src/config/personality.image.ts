@@ -1,0 +1,18 @@
+export const personalityImage = {
+  INTJ: "https://www.16personalities.com/static/images/personality-types/headers/analysts_Architect_INTJ_personality_header.svg",
+  INTP: "https://www.16personalities.com/static/images/personality-types/headers/analysts_Logician_INTP_personality_header.svg",
+  ENTJ: "https://www.16personalities.com/static/images/personality-types/headers/analysts_Commander_ENTJ_personality_header.svg",
+  ENTP: "https://www.16personalities.com/static/images/personality-types/headers/analysts_Debater_ENTP_personality_header.svg",
+  INFJ: "https://www.16personalities.com/static/images/personality-types/headers/diplomats_Advocate_INFJ_personality_header.svg",
+  INFP: "https://www.16personalities.com/static/images/personality-types/headers/diplomats_Mediator_INFP_personality_header.svg",
+  ENFJ: "https://www.16personalities.com/static/images/personality-types/headers/diplomats_Protagonist_ENFJ_personality_header.svg",
+  ENFP: "https://www.16personalities.com/static/images/personality-types/headers/diplomats_Campaigner_ENFP_personality_header.svg",
+  ISTJ: "https://www.16personalities.com/static/images/personality-types/headers/sentinels_Logistician_ISTJ_personality_header.svg",
+  ISFJ: "https://www.16personalities.com/static/images/personality-types/headers/sentinels_Defender_ISFJ_personality_header.svg",
+  ESTJ: "https://www.16personalities.com/static/images/personality-types/headers/sentinels_Executive_ESTJ_personality_header.svg",
+  ESFJ: "https://www.16personalities.com/static/images/personality-types/headers/sentinels_Consul_ESFJ_personality_header.svg",
+  ISTP: "https://www.16personalities.com/static/images/personality-types/headers/explorers_Virtuoso_ISTP_personality_header.svg",
+  ISFP: "https://www.16personalities.com/static/images/personality-types/headers/explorers_Adventurer_ISFP_personality_header.svg",
+  ESTP: "https://www.16personalities.com/static/images/personality-types/headers/explorers_Entrepreneur_ESTP_personality_header.svg",
+  ESFP: "https://www.16personalities.com/static/images/personality-types/headers/explorers_Entertainer_ESFP_personality_header.svg",
+};
